@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lats
-  m_Shader: {fileID: -6465566751694194690, guid: 7954b0530809dc845b2bcb2981fea9c0,
+  m_Name: LatLong
+  m_Shader: {fileID: -6465566751694194690, guid: f40018cbb76640d4b84dd36b1255d37c,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -54,12 +54,14 @@ Material:
     - _BumpScale: 1
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DegreesBetweenLines: 20
+    - _DegreesBetweenLats: 10
+    - _DegreesBetweenLongs: 20
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _LatThickness: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _QueueOffset: 0
@@ -67,20 +69,26 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 10
+    - _SpeedLats: 10
+    - _SpeedLongs: 10
     - _SrcBlend: 1
     - _Surface: 0
-    - _ThicknessInDegrees: 2
+    - _Thickness: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.5471698, g: 0.25551796, b: 0.45789298, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColorLats: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColorLongs: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1.9999998, g: 1.9999998, b: 1.9999998, a: 0}
-    - _Origo: {r: 0, g: 0, b: 0, a: 0}
+    - _Emission: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Meridian: {r: 1, g: 0, b: 0, a: 0}
+    - _OrigoLat: {r: 0, g: 0, b: 0, a: 0}
+    - _OrigoLong: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _UpAxis: {r: 0, g: 1, b: 0, a: 0}
---- !u!114 &239179203902689470
+--- !u!114 &3913438028593271412
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
